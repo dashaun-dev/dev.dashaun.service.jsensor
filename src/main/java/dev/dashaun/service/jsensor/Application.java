@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import oshi.SystemInfo;
@@ -15,6 +16,7 @@ import oshi.software.os.OperatingSystem;
 import java.util.ArrayList;
 import java.util.List;
 
+@EnableMethodSecurity
 @SpringBootApplication
 public class Application {
 
