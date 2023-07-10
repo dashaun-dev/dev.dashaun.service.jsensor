@@ -22,7 +22,7 @@ jobs:
           name: "mvnw spring-boot:build-image"
           command: "./mvnw spring-boot:build-image"
       - docker/push:
-          image: $CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME
+          image: dashaun/$CIRCLE_PROJECT_REPONAME
           tag: $CIRCLE_TAG-aarch_64
 
 workflows:
